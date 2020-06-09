@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.head{
+    text-align: center;
+    background: blueviolet;
+    height: 80px;
+    
+   
+}
+.head>h1{
+    color:white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 80px;
+    text-shadow:2px 2px brown;
+}
+.hamburger{
+    position:absolute;
+    padding-left: 20px;
+    font-size: 30px;
+    top: 10px;
+    cursor: pointer;
+    color: white;
+    line-height: 65px;
+    
+}
+.navbar{
+    position:fixed;
+    width: 250px;
+    height: 100%;
+    background: red;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+.navbar>ul{
+    text-align: center;
+    padding-top: 80px;
+    list-style: none;   
+}
+.navbar>ul>li{
+    padding: 50px;
+    font-size: 20px;
+    border-bottom:2px solid black ;
+    box-shadow:1px 1px  blue;
+}
+.navbar>ul>:first-child{
+    border-top:2px solid black ;
+    box-shadow: 0px 0px 0px 1px  blue;
+}
+.navbar>ul>li>a{
+    text-decoration: none;
+    text-transform:uppercase ;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.navbar>ul>li:hover{
+    border-left: 3px solid blue;
+    background: chocolate;
+   
+    
+}
+.navbar>ul>li>a:hover{
+background: cornflowerblue;
+
+}
+.closebtn{
+    padding: 3px 10px;
+    position:absolute;
+    font-size: 20px;
+    color:white;
+    margin: 8px 210px;
+    text-decoration: none;
+    background: blue;
+    border-radius: 7px;
+}
+.container{
+    padding-left: 260px;
+    text-align: justify;
+    padding-right: 20px;
+    float: left;
+    width: 80%;
+    min-height: 530px;
+}
+.container>img{
+    display: block;
+    width: 100%;
+    object-fit:cover;
+    padding-bottom:10px;
+    z-index: -1;
+
+}
+.nav{
+    min-height: 530px;
+    width: 20%;
+    float: right;
+    text-align: justify; 
+    padding: 10px;
+    border-left:1px solid #ccc ;
+}
+.nav>h1{
+    background: cornflowerblue;
+    height: 20px;
+    text-align: center;
+    padding: 40px;
+    font-size: 30px;
+    color: white;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-right-radius: 20px;
+}
+.container::after{
+    content: " ";
+    display: block;
+    clear: both;
+    *zoom: 1;
+}
+.foot{
+    display:inline-block;
+    background: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+
+    
+}
+@media only screen and (max-width:770px){
+    .head,
+    .nav,
+    .container,
+     .foot{
+text-align: center;
+float: none;
+width: 100%;
+    }
+    
+}
+

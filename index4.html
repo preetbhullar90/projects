@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        @media(min-width: 800px){
+            .container{
+            flex-basis: 20%;
+            display: flex;
+            min-height: 1800px;
+ 
+        }
+        .button{
+            position: fixed;
+            margin-top: 500px;
+        }
+         
+        
+        .container>div{
+            border:1px solid #ccc;
+            padding: 10px;
+            
+            
+        }
+        .box-1{
+         flex:1;
+         order:2;
+      
+        }
+        .box-2{
+          flex:1;
+          order:1;
+        }
+        .box-3{
+         flex:1;
+         order:3;
+        }
+
+
+    </style>
+    <div class="container">
+        <div class="box-1">
+            <h3>box one</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="box-2">
+            <h3>box two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="box-3">
+            <h3>box three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <button class="button">press</button>
+</body>
+</html>

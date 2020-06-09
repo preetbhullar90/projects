@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#sidebar2 {
+    position:fixed;
+    background-color: black;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    transition: all 500ms linear;
+    
+}
+#sidebar2.active{
+    left: 0px;
+}
+#sidebar2>ul>li{
+    list-style: none;
+padding: 40px 10px;
+border-bottom: 1px solid #ccc;
+font-family: Arial, Helvetica, sans-serif;
+color: blanchedalmond;
+font-size: 30px;
+}
+#sidebar2>ul>li:hover{
+    color: orange;
+}
+#sidebar2>ul>li:hover{
+    background-color:forestgreen;
+    border-left:5px solid royalblue;
+}
+#sidebar2 .btn{
+    position: absolute;
+    top: 25px;
+    left: 270px;
+ 
+}
+#sidebar2 .btn span{
+display: block;
+width: 30px;
+height: 5px;
+background-color: #151719;
+margin: 5px 0px;
+}
+.head{
+    background-color: cadetblue;
+    padding:30px;
+} 
+    
+.head>h1{
+    color: white;
+    font-size:50px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content>img{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    
+    margin-bottom: 10px;
+    width: 80%;
+    
+    
+}
+.content{
+    width: 80%;
+    background-color: #fff;
+    float: left;
+    min-height:530px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left:17em;
+    text-align: justify;
+    font-family: cursive;
+}
+.sidebar{
+    width:20%;
+    background-color: #fff;
+    text-align: justify;  
+    float: right;
+    min-height:530px;
+    border-left:2px solid#ccc ;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.sidebar>h1{
+    background-color: steelblue;
+    padding: 10px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    margin-top: 10px;
+    
+}
+.sidebar>p{
+    font-family: cursive;
+    padding: 10px;
+
+}
+@media only screen and (max-width:600px){
+    
+    .btn,
+    .container,
+    .head,
+    .content,
+    .sidebar,
+    #sidebar2{
+   float: none;
+   text-align: center;
+   width: 100%; 
+
+    }
+}

@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    
+}
+.container>span{
+    display: block;
+    background: black;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+}
+
+#mainnav{
+    position: fixed;
+    background-color:orange;
+    width: 250px;
+    height: 100%;
+    
+}
+#mainnav.active{
+    left: 0px;
+}
